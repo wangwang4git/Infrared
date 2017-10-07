@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.powergrid.victor.infraredpowergrid.infrared.activity.PreviewSettingActivity">
+
+    <TextView
+        android:id="@+id/setting_load_value"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="负荷值"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/setting_load_value_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/setting_load_value"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/setting_load_value"
+        android:hint="请输入负荷值"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/setting_div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_load_value"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#80808080" />
+
+    <TextView
+        android:id="@+id/setting_env_temp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_div1"
+        android:text="环境温度"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/setting_env_temp_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/setting_env_temp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/setting_env_temp"
+        android:hint="请输入环境温度"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/setting_div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_env_temp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#80808080" />
+
+    <TextView
+        android:id="@+id/setting_device_interval"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setting_div2"
+        android:gravity="center_vertical"
+        android:text="被测设备间隔"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/setting_device_interval_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_device_interval"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/setting_div3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_device_interval_btn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#80808080" />
+
+    <TextView
+        android:id="@+id/setting_part_desc"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_div3"
+        android:text="扩展描述"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/setting_part_desc"
+        android:layout_marginTop="10dp"
+        android:hint="扩展描述输入"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

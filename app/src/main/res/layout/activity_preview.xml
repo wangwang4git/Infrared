@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.powergrid.victor.infraredpowergrid.infrared.activity.PreviewActivity">
+
+    <ImageView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/background_dark"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:onClick="previewViewClick"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/preview_calculate_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#40ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="测量信息"
+            android:textColor="#80ff0000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/preview_calculate_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中心点温度："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_calculate_hottest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红外最高温度："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_load_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负荷值："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_env_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="环境温度："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_device_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备间隔："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_part_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="部位描述："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/preview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测温时间："
+            android:textColor="#80ff0000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/preview_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/preview_connect_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="接入中...\n请检查红外设备是否已连接并开启电源\n依然未恢复，就请返回该页面再次进入"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/preview_tuning_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="设备tuning中..."
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</FrameLayout>

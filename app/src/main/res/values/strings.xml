@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">红外测温</string>
+    <string name="home_user_area_label">测温人信息</string>
+    <string name="home_user_area_user1">测温人: </string>
+    <string name="home_user_area_user1_hint">请输入记录人</string>
+    <string name="home_user_area_user2">记录人: </string>
+    <string name="home_user_area_user2_hint">请输入测温人</string>
+    <string name="home_user_area_person_add">从数据库选择</string>
+    <string name="home_user_area_clear">清除信息</string>
+    <string name="home_user_area_modify">修改信息</string>
+    <string name="home_into_measure">进入测温页面</string>
+    <string name="home_history_export">历史数据导出</string>
+</resources>
